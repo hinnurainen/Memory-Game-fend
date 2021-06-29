@@ -21,6 +21,9 @@ let starsList = document.querySelectorAll(".stars li");
 // close icon in modal
 let closeicon = document.querySelector(".close");
 
+// background sound for gameover
+let gameoverSound;
+
 // declare modal
 let modal = document.getElementById("popup1")
 
@@ -218,6 +221,10 @@ function congratulations() {
 
         //closeicon on modal
         closeModal();
+
+        //gameoversound on
+        gameoverSound = new sound("Idina Menzel - Let It Go_Frozen (minus).mp3");
+        gameoverSound.play();
     };
 }
 
@@ -226,6 +233,7 @@ function congratulations() {
 function closeModal() {
     closeicon.addEventListener("click", function (e) {
         modal.classList.remove("show");
+        gameoverSound.stop();
         startGame();
     });
 }
@@ -234,6 +242,7 @@ function closeModal() {
 // @desciption for user to play Again 
 function playAgain() {
     modal.classList.remove("show");
+    gameoverSound.stop();
     startGame();
 }
 
@@ -245,3 +254,19 @@ for (var i = 0; i < cards.length; i++) {
     card.addEventListener("click", cardOpen);
     card.addEventListener("click", congratulations);
 };
+
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.loop = false;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function () {
+        this.sound.play();
+    }
+    this.stop = function () {
+        this.sound.pause();
+    }
+}
