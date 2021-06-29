@@ -310,6 +310,10 @@ h1 {
     height: 4.7rem;
     width: 4.7rem;
   }
+
+  h1 {
+    text-align: center;
+  }
 }
 
 /* For Tablets and larger screens
