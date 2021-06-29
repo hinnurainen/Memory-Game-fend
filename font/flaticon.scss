@@ -1,0 +1,57 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?49bf1197dbebcacbfbeac2b9a396cc5b") format("truetype"),
+url("./flaticon.woff?49bf1197dbebcacbfbeac2b9a396cc5b") format("woff"),
+url("./flaticon.woff2?49bf1197dbebcacbfbeac2b9a396cc5b") format("woff2"),
+url("./flaticon.eot?49bf1197dbebcacbfbeac2b9a396cc5b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?49bf1197dbebcacbfbeac2b9a396cc5b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "unicorn": "\f101",
+    "love-hand-drawn-heart-symbol-outline": "\f102",
+    "rainbow": "\f103",
+    "reindeer": "\f104",
+    "crown": "\f105",
+    "wand": "\f106",
+    "sun": "\f107",
+    "princess": "\f108",
+);
+
+.flaticon-unicorn:before {
+    content: map-get($flaticon-map, "unicorn");
+}
+.flaticon-love-hand-drawn-heart-symbol-outline:before {
+    content: map-get($flaticon-map, "love-hand-drawn-heart-symbol-outline");
+}
+.flaticon-rainbow:before {
+    content: map-get($flaticon-map, "rainbow");
+}
+.flaticon-reindeer:before {
+    content: map-get($flaticon-map, "reindeer");
+}
+.flaticon-crown:before {
+    content: map-get($flaticon-map, "crown");
+}
+.flaticon-wand:before {
+    content: map-get($flaticon-map, "wand");
+}
+.flaticon-sun:before {
+    content: map-get($flaticon-map, "sun");
+}
+.flaticon-princess:before {
+    content: map-get($flaticon-map, "princess");
+}

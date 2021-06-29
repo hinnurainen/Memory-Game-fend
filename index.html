@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Memory Game</title>
     <meta name="description" content="">
+    <title>Erican muistipeli</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" >
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>Memory Game</h1>
+            <h1>Super-Erican muistipeli</h1>
         </header>
 
         <section class="score-panel">
@@ -24,7 +28,7 @@
         		<li><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">0</span> Move(s)
+        	<span class="moves">0</span> siirtoa
 
             <div class="timer">
             </div>
@@ -36,7 +40,7 @@
 
         <ul class="deck" id="card-deck">
             <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
+                <i class="flaticon-unicorn"></i>
             </li>
             <li class="card" type="plane">
                 <i class="fa fa-paper-plane-o"></i>
@@ -60,7 +64,7 @@
                 <i class="fa fa-bicycle"></i>
             </li>
             <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
+               <i class="flaticon-unicorn"></i>
             </li>
             <li class="card" type="bomb">
                 <i class="fa fa-bomb"></i>
@@ -87,18 +91,18 @@
 
         <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Congratulations 🎉</h2>
                 <a class="close" href=# >×</a>
+                <h2>Onnea Erica! 🦄🦄🦄</h2>
                 <div class="content-1">
-                    Congratulations you're a winner 🎉🎉
+                    Hyvin pelattu, mun kummityttö on paras!
                 </div>
                 <div class="content-2">
-                    <p>You made <span id=finalMove> </span> moves </p>
-                    <p>in <span id=totalTime> </span> </p>
-                    <p>Rating:  <span id=starRating></span></p>
+                    <p>Teit <span id=finalMove> </span> siirtoa </p>
+                    <p>ajassa <span id=totalTime> </span> </p>
+                    <p>Tähtiarvostelu:  <span id=starRating></span></p>
                 </div>
                 <button id="play-again"onclick="playAgain()">
-                    Play again 😄</a>
+                    Pelaa uudestaan</a>
                 </button>
             </div>
         </div>
