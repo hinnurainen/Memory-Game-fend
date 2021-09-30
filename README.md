@@ -1,3 +1,5 @@
+[![CI](https://github.com/hinnurainen/Memory-Game-fend/actions/workflows/anothermain.yml/badge.svg)](https://github.com/hinnurainen/Memory-Game-fend/actions/workflows/anothermain.yml)
+
 # Memory Game Project
 
 ## What is the Memory Game
